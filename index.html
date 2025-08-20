@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earning Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Top Banner */
+    .top-banner {
+      background: #00a8ff;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    /* Time */
+    #time {
+      margin-top: 10px;
+      font-size: 16px;
+      color: gold;
+      font-weight: bold;
+    }
+
+    /* Main Heading */
+    h1 {
+      color: lime;
+      font-size: 26px;
+      margin-top: 20px;
+    }
+
+    .sub-heading {
+      color: #8e44ad;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    /* Countdown Box (Yellow) */
+    .countdown {
+      background: yellow;
+      color: #000;
+      font-size: 34px;
+      font-weight: bold;
+      width: 90px;
+      height: 90px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      letter-spacing: 1px;
+    }
+
+    .join-text {
+      color: red;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Points */
+    .points {
+      text-align: left;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .points p {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    /* Subscribe Button */
+    .subscribe-btn {
+      background: red;
+      color: white;
+      padding: 15px 25px;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .subscribe-btn:hover {
+      background: darkred;
+      transform: scale(1.05);
+    }
+
+    /* Warning / Spots */
+    .warning {
+      margin-top: 15px;
+      font-size: 18px;
+      color: gold;
+      font-weight: bold;
+    }
+
+    /* Ads Manager Button */
+    .ads-btn {
+      margin-top: 20px;
+      background: #00c851;
+      color: white;
+      padding: 12px 22px;
+      font-size:10px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .ads-btn:hover {
+      background: #007e33;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    /* Popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    .popup-content {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      width: 300px;
+      animation: popupAnim 0.5s ease;
+    }
+    @keyframes popupAnim {
+      from { transform: scale(0.5); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+    }
+    .popup-timer {
+      font-size: 28px;
+      margin: 15px 0;
+      color: yellow;
+      font-weight: bold;
+    }
+    .close-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Running Line */
+    .marquee {
+      margin-top: 20px;
+      background: #111;
+      color: #00ffcc;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="top-banner">
+    🚀 JOIN OUR TELEGRAM CHANNEL AND START EARNING JOURNEY 💸
+  </div>
+
+  <!-- Live Time -->
+  <div id="time">Loading time...</div>
+
+  <!-- Main Content -->
+  <h1>EARN DAILY 1000 – 10000</h1>
+  <p class="sub-heading">Guaranteed returns | Limited Offer</p>
+
+  <!-- YELLOW MAIN TIMER (60s) -->
+  <div class="countdown" id="mainCounter">60</div>
+  <p class="join-text">Click here to join fast</p>
+
+  <div class="points">
+    <p>✅ Real Earning Proofs</p>
+    <p>✅ Trusted by 5000+ Members</p>
+    <p>✅ Instant Daily Alerts</p>
+  </div>
+
+  <!-- Subscribe Button -->
+  <a href="https://t.me/+Y-pI5gU6ZwgyMTk9" class="subscribe-btn">SUBSCRIBE FOR FREE ➝</a>
+
+  <!-- Spot Countdown -->
+  <p class="warning" id="spots">⚡ Only 50 spots left today!</p>
+
+  <!-- Ads Manager -->
+  <a href="https://t.me/Denox999" class="ads-btn">📩 Ads Manager</a>
+
+  <div class="footer"> Ads Manager – Contact for Promotions</div>
+
+  <!-- Running Line -->
+  <marquee class="marquee" behavior="scroll" direction="left">
+    🔥 Limited Time Offer! Join Fast & Start Earning Daily | Trusted by 5000+ Members | Instant Alerts | Don't Miss Out! 🔥
+  </marquee>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>🎉 Hurry Up!</h2>
+      <p>Offer expires in:</p>
+      <div class="popup-timer" id="popupTimer">20</div>
+      <a href="https://t.me/+Y-pI5gU6ZwgyMTk9" class="subscribe-btn">Join Now</a><br><br>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Live Time
+    function updateTime() {
+      const now = new Date();
+      document.getElementById("time").innerText = "🕒 " + now.toLocaleTimeString();
+    }
+    setInterval(updateTime, 1000); updateTime();
+
+    // === MAIN YELLOW TIMER: 60 seconds ===
+    let mainSec = 60;
+    function updateMainTimer() {
+      mainSec--;
+      if (mainSec < 0) {
+        // reset and keep looping
+        mainSec = 60;
+      }
+      // show always 2 digits (e.g., 09, 08...)
+      const display = mainSec < 10 ? "0" + mainSec : mainSec;
+      document.getElementById("mainCounter").innerText = display;
+    }
+    // start immediately so it shows 60 then ticks after 1s
+    setInterval(updateMainTimer, 1000);
+
+    // Spots Countdown (10 -> 0)
+    let spots = 10;
+    const spotEl = document.getElementById("spots");
+    const spotInterval = setInterval(() => {
+      spots--;
+      if (spots > 0) {
+        spotEl.innerText = `⚡ Only ${spots} spots left today!`;
+      } else {
+        spotEl.innerText = "⚠️ No spots left today!";
+        clearInterval(spotInterval);
+      }
+    }, 4000); // every 4 seconds
+
+    // Popup: show after 5s, 20s timer
+    setTimeout(() => {
+      document.getElementById("popup").style.display = "flex";
+      let popupCount = 20;
+      const popupTimer = document.getElementById("popupTimer");
+      const popupInterval = setInterval(() => {
+        popupCount--;
+        popupTimer.innerText = popupCount;
+        if (popupCount <= 0) {
+          clearInterval(popupInterval);
+          closePopup();
+        }
+      }, 1000);
+    }, 5000);
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
